@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import EmailValidator from './EmailValidator'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Email Validation</h1>
+        <h2>Creating a React App with <span style={{
+          fontFamily:'cursive',
+          color: "rgb(169, 254, 129)"
+          }}>Typescript</span></h2>
       </header>
+      <main>
+        <EmailValidator />
+      </main>
     </div>
   );
 }
